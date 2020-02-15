@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 
+
 public class GraphIO {
 	
 	static public void readFile(Graph g, String filename) throws IOException {
@@ -36,10 +37,11 @@ public class GraphIO {
 			s.close();
 			
 		} 
-		// catches an exception where an element doesn't exist
+		
 		catch ( IOException e) {
-			System.out.println(e);
-			System.out.println("Couldn't find /read file");
+			
+			System.out.println(" didn't work because " +e);
+			
 		}
 	}
 
